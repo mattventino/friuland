@@ -1,0 +1,312 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: 1px;
+    font-size: 150%;
+}
+
+:root {
+    --darkreader-neutral-background: #131516;
+    --darkreader-neutral-text: #d8d4cf;
+    --darkreader-selection-background: #004daa;
+    --darkreader-selection-text: #e8e6e3;
+}
+
+html {
+    color-scheme: dark !important;
+}
+
+header {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("/template/media/bgimg1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#cima {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 90%;
+    margin: 10px;
+    float: left;
+}
+
+#menu ul {
+    padding-left: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #33333356;
+    flex-direction: column;
+}
+
+#menu li {
+    padding: 4px 50px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+
+#menu a:hover {
+    color: rgb(0, 180, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin: 3%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.foot {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 80%
+}
+
+#articoloFoto {
+    width: 20%;
+}
+
+.foot #logo3 {
+    width: 40%;
+    height: auto;
+}
+
+.foot #logo2 {
+    width: 70%;
+    height: auto;
+}
+
+.foot h3 {
+    margin-top: 0;
+}
+
+.foot ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}
+
+.foot a:hover {
+    font-weight: bold;
+    color: rgb(0, 180, 0);
+}
+
+#social {
+    height: 30px;
+    padding: 4%;
+    width: auto;
+    transition: 0.2s;
+}
+
+#social:hover {
+    transform: scale(1.2);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/*Notizie*/
+.articles_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.articles h3 {
+    color: #aaa;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 90%;
+}
+
+.articles img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.articles article {
+    line-height: 1.5;
+    margin-top: 5%;
+    width: 100%;
+    margin-inline: 5%;
+    height: 100vh;
+}
+
+.articles p {
+    text-align: justify;
+}
+
+.articles h4 {
+    margin-top: 0px;
+    font-size: 120%;
+    text-align: center;
+}
+
+.articles a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+
+}
+
+.articles a:hover {
+    color: rgb(0, 180, 0)
+}
+
+
+.form {
+    display: block;
+    background-color: #2d2c35;
+    margin: auto;
+    padding: 2%;
+    height: 30%;
+    width: 50%;
+}
+
+.form input, select{
+    font-size: medium;
+    width: 100%;
+    height: 3vh;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    outline: none;
+    border: 1px solid #aaaaaa86;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid rgb(0, 180, 0);
+}
+
+input[type="submit"] {
+    margin-top: 10%;
+    font-size: 110%;
+    width: 40%;
+    height: 6vh;
+    margin: 5% auto;
+    display: block;
+    transition: 0.1s;
+
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 180, 0);
+    border-radius: 3.2%;
+    cursor: pointer;
+}
+
+input[type="date"]:hover, select:hover {
+    cursor: pointer;
+}
+
+.form textarea{
+    font-size: medium;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+
+@media (min-width: 768px) {
+    #menu ul {
+        flex-direction: row;
+    }
+
+    header {
+        height: 30vh;
+    }
+
+    .page header {
+        height: 10vh;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot {
+        width: 100%;
+        max-width: 60%;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .articles_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+#rickroll {
+    cursor: wait;
+    transition: 0.8s;
+}
+
+#rickroll:hover {
+    color: rgb(255, 73, 216);
+    rotate: 360deg;
+}
+
+
+/*
+*{
+    font-family: 'Comic Sans MS', sans-serif;
+    color: rgb(255, 73, 216) !important;
+}
+*/

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prenota la tua visita</title>
+    <link rel="stylesheet" href="/template/styles/style.css" />
+</head>
+
+<body class="page">
+    <header>
+        <div class="top-menu">
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="pages/chisiamo.html">Chi siamo</a></li>
+                        <li><a href="pages/contatti.html">Contatti</a></li>
+                        <li><a href="/prenota.html">Prenota</a></li>
+                        <li><a target="_blank" href="template/media/video.mp4">Notizie</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>FRIULAND</h1>
+        <h2>Veni, vidi, piangi</h2>
+        <div class="form">
+            <form method="post">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Inserisci il tuo nome" required><br>
+                <label for="cognome">Cognome</label>
+                <input type="text" name="cognome" placeholder="Inserisci il tuo cognome" required><br>
+                <label for="dataPrenotazione">Data di prenotazione</label>
+                <input type="date" name="dataPrenotazione" id="date" required>
+                <label for="numAdulti">Numero di adulti</label>
+                <select id="numAdulti" name="numAdulti" required>
+                    <option hidden>Seleziona un valore</option>
+                    <option value="0">Nessun adulto</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+                <label for="numRidotti">Numero di ridotti</label>
+                <select id="numRidotti" name="numRidotti" required>
+                    <option hidden>Seleziona un valore</option>
+                    <option value="0">Nessun ridotto</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+                <label for="note">Descrivi la richiesta</label><br>
+                <textarea name="note" id="note" rows="5" placeholder="Inserisci una nota"></textarea><br>
+                <input type="submit" value="INVIA">
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <img src="template/media/img2.png" id="logo2">
+            <h3>Mario Suryo Aji</h3>
+            <p id="rickroll">Never gonna give you up<br>Never gonna let you down</p>
+        </div>
+        <div class="foot">
+            <h3>Menù pagine</h3>
+            <ul>
+                <li><a href="pages/chisiamo.html" id="aaa">Chi siamo</a></li>
+                <li><a href="pages/contatti.html">Contatti</a></li>
+                <li><a target="_blank" href="template/media/video.mp4">Notizie</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <h3>Menù legale</h3>
+            <ul>
+                <li><a href="pages/termsofservice.html">Termini di servizio</a></li>
+                <li><a href="pages/privacy.html">Privacy</a></li>
+                <li><a href="pages/reclami.html">Reclami</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com"><img src="template/media/fb.webp"
+                            id="social"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com"><img src="template/media/ig.webp" id="social">
+                </li></a>
+                <li><a target="_blank" href="https://www.twitter.com"><img src="template/media/tw.png" id="social"></li>
+                </a>
+            </ul>
+
+            <img src="template/media/img3.png" id="logo3"><br>
+            <a href="">Cookie policy</a><br>
+            <a href="">Privacy policy</a>
+        </div>
+    </footer>
+    <div class="info">
+        Ortaggi Pramac S.R.L.<br>
+        via Morbidelli 21, Villanova dello Judrio (UD)<br>
+        Tel: 2189193465<br>
+        Email: <a href="mailto:ortaggiPramac@gmail.com">ortaggiPramac@gmail.com</a>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var oggi = new Date().toISOString().split('T')[0];
+    document.getElementById("date").setAttribute('min', oggi);
+</script>
